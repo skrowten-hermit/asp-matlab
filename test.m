@@ -6,8 +6,8 @@ recorded = '/home/sreekanth/Programs/asp-matlab/male_8k_half.wav'
 %plot(y1)
 %plot(y2)
 
-[Rx, lags] = xcorr(y1)
-tau = lags/fs
+[Rx, lags] = xcorr(y1, 'coeff')
+tau = lags/fs1
 
 % plot the signal autocorrelation function
 figure(6)
